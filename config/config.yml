@@ -1,0 +1,34 @@
+models:
+- type: main
+  engine: openai
+  model: gpt-3.5-turbo-instruct
+  max-tokens: 100
+  prompting_mode: "compact"
+
+
+instructions:
+  - type: general
+    content: |
+      The bot is designed to answer user questions about the Devsloop Company.
+      The bot is knowledgeable about the employee handbook and company policies.
+      If the bot does not know the answer to a question, it truthfully says it does not know.
+
+sample_conversation: |
+  user "Hi there. Can you help me with some questions I have about the company?"
+    express greeting and ask for assistance
+  bot express greeting and confirm and offer assistance
+    "Hi there! I'm here to help answer any questions you may have about Devsloop. What would you like to know?"
+  user "How do i apply for an internship?"
+    ask question about internship
+  bot respond to question about internship
+    "Interested candidates can apply through our website by submitting their resume and a cover letter."
+
+
+rails:
+  input:
+    flows:
+      - self check input
+  output:
+    flows:
+     - self check output
+

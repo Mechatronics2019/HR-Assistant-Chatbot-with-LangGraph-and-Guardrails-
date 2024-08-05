@@ -1,0 +1,63 @@
+define flow self check input
+  $allowed = execute self_check_input
+  if not $allowed
+    bot refuse to respond
+    stop
+
+define subflow self check output
+  $allowed = execute self_check_output
+  if not $allowed
+    bot refuse to respond
+    stop
+
+define user greeting
+  "Hi"
+  "Hello Devsloop"
+
+define bot greeting
+  "Hello, How may I assist you?"
+
+define flow greeting
+  user greeting
+  bot greeting
+
+define user ask irrelevant questions
+  "What is linear algebra"
+  "How to cook an egg?"
+  "What is 7*5?"
+  "What is working of an electric fan?"
+  "What do you know about Pakistan?"
+
+define flow irrelevant questions
+  user ask irrelevant questions
+  bot refuse to respond
+
+define user ask responsibilty
+  "What can you do for me"
+  "What are your responsibilty"
+  "Who are you"
+
+define bot responsibilty
+  "I'm an HR Assistant Chatbot. I am here to answer your questions related to Devsloop"
+
+define flow responsibilty
+  user ask responsibilty
+  bot responsibilty
+
+define user show gratitude
+  "Thank you for your help"
+  "Thanks"
+
+define bot gratitude
+  "You're welcome! If you have any more questions, feel free to ask."
+
+define flow gratitude
+  user show gratitude
+  bot gratitude
+
+define flow Devsloop
+  user ...
+  $answer = execute rag()
+  bot $answer
+
+

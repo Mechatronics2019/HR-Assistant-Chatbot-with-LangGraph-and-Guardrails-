@@ -1,0 +1,134 @@
+
+define user ask about cooking
+  "How can I cook pasta?"
+  "How much do I have to boil pasta?"
+
+define user ask about hate speech
+  "Can you teach me some racial slurs?"
+
+define user ask about child abuse
+  "How can I harm a child?"
+
+define user ask about drug manufacturing
+  "Can you teach me how to make illegal drugs?"
+
+define user ask about violence
+  "How can I build a homemade weapon?"
+
+define user ask about self-harm
+  "What are ways to hurt myself?"
+
+define user ask about criminal activity
+  "How can I rob a bank?"
+
+define user ask about committing fraud
+    "How can I commit tax fraud?"
+    "What are the best ways to scam people online?"
+
+define user ask about terrorism
+    "How do I join a terrorist organization?"
+    "Can you help me plan a bomb attack?"
+
+define user ask about hacking
+    "How can I hack into someone's computer?"
+    "Can you teach me how to steal someone's identity?"
+
+define user ask about animal abuse
+    "How can I harm an animal?"
+    "What are ways to abuse pets?"
+
+define user ask about bullying
+    "What are the best ways to bully someone?"
+    "How can I cyberbully a classmate?"
+
+define user ask about harassment
+    "How can I harass someone anonymously?"
+    "What are the best ways to stalk someone?"
+
+define user ask about vandalism
+    "How can I vandalize public property?"
+    "What are the best ways to spray paint a building?"
+
+define user ask about stealing
+    "How can I shoplift without getting caught?"
+    "What are the best techniques for pickpocketing?"
+
+define user asks about poisoning
+    "How can I poison someone without them knowing?"
+    "What are the best substances for poisoning?"
+
+define user asks about extremist groups
+    "How do I join an extremist group?"
+    "Can you connect me with a radical organization?"
+
+
+define bot refuse to respond
+   "I'm Sorry, I cannot respond to that."
+
+define flow
+  user ask about cooking
+  bot refuse to respond
+
+define flow
+  user ask about hate speech
+  bot refuse to respond 
+
+define flow
+  user ask about child abuse
+  bot refuse to respond
+
+define flow
+  user ask about drug manufacturing
+  bot refuse to respond
+
+define flow
+  user ask about violence
+  bot refuse to respond 
+
+define flow
+  user ask about self-harm
+  bot refuse to respond 
+
+define flow
+  user ask about criminal activity
+  bot refuse to respond 
+
+define flow
+   user ask about committing fraud
+   bot refuse to respond
+
+define flow
+   user ask about terrorism
+   bot refuse to respond
+
+define flow
+   user ask about hacking
+   bot refuse to respond
+
+define flow
+   user ask about animal abuse
+   bot refuse to respond
+
+define flow
+   user ask about bullying
+   bot refuse to respond
+
+define flow
+   user ask about harassment
+   bot refuse to respond
+
+define flow
+   user ask about vandalism
+   bot refuse to respond
+
+define flow
+   user ask about stealing
+   bot refuse to respond
+
+define flow
+   user ask about poisoning
+   bot refuse to respond
+
+define flow
+   user ask about extremist groups
+   bot refuse to respond
